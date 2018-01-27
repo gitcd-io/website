@@ -2,23 +2,20 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-def sidebar(value):
-  if value.startswith('archives') or value.startswith('category'):
-    return 'right-sidebar'
-  elif value == 'index':
-    return 'index'
-  else:
-    return 'no-sidebar'
-
-JINJA_FILTERS = { 'sidebar': sidebar }
-
 AUTHOR = 'Claudio Walser'
 SITENAME = 'gitcd'
 SITEURL = ''
-#THEME = 'pelican-striped-html5up'
-#THEME = 'twenty-html5up'
-THEME = 'html5-dopetrope'
+# THEME = 'pelican-striped-html5up'
+# THEME = 'twenty-html5up'
+# THEME = 'html5-dopetrope'
+# THEME = 'clean-blog'
+# THEME = 'attila'
+# THEME = 'pelican-blue'
+THEME = 'pelican-marble'
+
 PATH = 'content'
+# logo path, needs to be stored in PATH Setting
+LOGO = '/images/logo.svg'
 
 TIMEZONE = 'Europe/Zurich'
 
@@ -31,6 +28,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_HOME = True
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
@@ -46,3 +44,20 @@ DEFAULT_PAGINATION = False
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+
+def createIconsFile():
+  filename = 'output/theme/css/icomoon.css'
+  with open(filename) as file:
+    content = file.read()
+    lines = content.split("\n")
+    icons = []
+    for line in lines:
+      if line.startswith('.icon-'):
+        lineParts = line.split(':')
+        iconClass = lineParts[0].replace('.icon-', 'icon-')
+
+        icons.append(iconClass)
+    return icons
+
+ICONS = createIconsFile()
