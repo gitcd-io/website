@@ -16,7 +16,7 @@ THEME = 'pelican-marble'
 
 PATH = 'content'
 # logo path, needs to be stored in PATH Setting
-LOGO = '/images/logo.svg'
+LOGO = 'images/logo.svg'
 
 TIMEZONE = 'Europe/Zurich'
 
@@ -33,7 +33,7 @@ DISPLAY_PAGES_ON_HOME = True
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_TAGS_ON_MENU = False
 USE_FOLDER_AS_CATEGORY = True
-
+PAGE_ORDER_BY = 'order'
 
 # MENUITEMS = [('Archives', 'archives.html')]
 
@@ -53,6 +53,13 @@ SOCIAL = (
   # ('Google Plus', 'https://plus.google.com/+ClaudioWalser'),
   # ('Twitter', 'https://www.twitter.com/claudio-walser'),
 )
+
+ABOUT = {
+  'image': 'images/about.jpeg',
+  'mail': 'info@gitcd.io',
+  'text': 'Learn more about the creator of gitcd or just drop a message.',
+  'link': 'pages/contact.html'
+}
 
 DEFAULT_PAGINATION = False
 
