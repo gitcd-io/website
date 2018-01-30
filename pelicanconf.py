@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = 'Claudio Walser'
 SITENAME = 'gitcd'
@@ -8,7 +9,7 @@ SITEURL = ''
 # THEME = 'pelican-striped-html5up'
 # THEME = 'twenty-html5up'
 # THEME = 'html5-dopetrope'
-# THEME = 'clean-blog'
+# sTHEME = 'clean-blog'
 # THEME = 'attila'
 # THEME = 'pelican-blue'
 THEME = 'pelican-marble'
@@ -29,6 +30,13 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_PAGES_ON_HOME = True
+DISPLAY_CATEGORIES_ON_MENU = False
+DISPLAY_TAGS_ON_MENU = False
+USE_FOLDER_AS_CATEGORY = True
+
+
+# MENUITEMS = [('Archives', 'archives.html')]
+
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
@@ -37,21 +45,26 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('You can add links in your config file', '#'),
-          ('Another social link', '#'),)
+SOCIAL = (
+  ('Github', 'https://www.github.com/claudio-walser/gitcd'),
+  ('Read the Docs', 'https://gitcd.readthedocs.io/en/latest/?badge=latest'),
+  ('Travis', 'https://travis-ci.org/claudio-walser/gitcd'),
+
+  # ('Google Plus', 'https://plus.google.com/+ClaudioWalser'),
+  # ('Twitter', 'https://www.twitter.com/claudio-walser'),
+)
 
 DEFAULT_PAGINATION = False
-
-# Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
 
 
 def createIconsFile():
   filename = 'output/theme/css/icomoon.css'
+  icons = []
+  if not os.path.isfile(filename):
+    return icons
   with open(filename) as file:
     content = file.read()
     lines = content.split("\n")
-    icons = []
     for line in lines:
       if line.startswith('.icon-'):
         lineParts = line.split(':')
@@ -61,3 +74,13 @@ def createIconsFile():
     return icons
 
 ICONS = createIconsFile()
+
+def sidebar(value):
+  if value.startswith('archives') or value.startswith('category'):
+    return 'right-sidebar'
+  elif value == 'index':
+    return 'index'
+  else:
+    return 'no-sidebar'
+
+  JINJA_FILTERS = {'sidebar': sidebar}

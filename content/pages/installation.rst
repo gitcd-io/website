@@ -1,9 +1,10 @@
 Installation
 #################
 
+:order: 2
 :date: 2018-01-25 08:47
 :icon: icon-download
-:lead: This is some short lead, you might like it!
+:summary: This is some short lead, you might like it!
 
 Debian/Ubuntu
 
