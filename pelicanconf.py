@@ -61,6 +61,36 @@ ABOUT = {
   'link': 'pages/contact.html'
 }
 
+HERO = [
+  {
+    'image': '/images/hero1-backround.jpg',
+    'title': 'my first hero title',
+    'text': 'check this out',
+    'links': [
+      {
+        'icon': 'icon-code',
+        'url': 'https://github.com',
+        'text': 'Github'
+      }
+    ]
+  }, {
+    'image': '/images/hero2-backround.jpg',
+    'title': 'something else',
+    'text': 'well well well',
+    'links': []
+  }, {
+    'image': '/images/hero3-backround.jpg',
+    'title': 'hui',
+    'text': 'buh',
+    'links': []
+  }, {
+    'image': '/images/hero4-backround.jpg',
+    'title': 'grappelensee',
+    'text': 'in hd colors',
+    'links': []
+  }
+]
+
 DEFAULT_PAGINATION = False
 
 
