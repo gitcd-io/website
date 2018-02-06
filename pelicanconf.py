@@ -4,7 +4,7 @@ from __future__ import unicode_literals
 import os
 
 AUTHOR = 'Claudio Walser'
-SITENAME = 'gitcd'
+SITENAME = 'GITCD'
 SITEURL = ''
 # THEME = 'pelican-striped-html5up'
 # THEME = 'twenty-html5up'
@@ -13,6 +13,7 @@ SITEURL = ''
 # THEME = 'attila'
 # THEME = 'pelican-blue'
 THEME = 'pelican-marble'
+# THEME = 'flex'
 
 PATH = 'content'
 # logo path, needs to be stored in PATH Setting
@@ -34,9 +35,25 @@ DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_TAGS_ON_MENU = False
 USE_FOLDER_AS_CATEGORY = True
 PAGE_ORDER_BY = 'order'
+DISQUS_SHORTNAME = 'gitcd-dev'
+DISQUS_ON_PAGES = False
+
+PYGMENTS_RST_OPTIONS = {}
+
+PLUGIN_PATHS = ['../pelican-plugins']
+PLUGINS = ['tipue_search']
+
+DIRECT_TEMPLATES = [
+  'index',
+  'tags',
+  'categories',
+  'authors',
+  'archives',
+  'search',
+  'contact'
+]
 
 # MENUITEMS = [('Archives', 'archives.html')]
-
 
 # Blogroll
 LINKS = (('Pelican', 'http://getpelican.com/'),
@@ -91,7 +108,7 @@ HERO = [
   }
 ]
 
-DEFAULT_PAGINATION = False
+DEFAULT_PAGINATION = 2
 
 
 def createIconsFile():
