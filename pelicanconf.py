@@ -6,7 +6,8 @@ import os
 AUTHOR = 'Claudio Walser'
 SITENAME = 'GITCD'
 SITEDESCRIPTION = 'GITCD - continuous delivery with git'
-SITEURL = ''
+SITEURL = 'http://localhost'
+BASEURL = 'http://localhost'
 # THEME = 'pelican-striped-html5up'
 # THEME = 'twenty-html5up'
 # THEME = 'html5-dopetrope'
@@ -23,7 +24,8 @@ LOGO = 'images/logo.svg'
 
 TIMEZONE = 'Europe/Zurich'
 
-DEFAULT_LANG = 'en'
+DEFAULT_LANG = 'de'
+LOCALE = 'de_DE'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -43,7 +45,7 @@ DISQUS_ON_PAGES = False
 PYGMENTS_RST_OPTIONS = {}
 
 PLUGIN_PATHS = ['../pelican-plugins']
-PLUGINS = ['tipue_search']
+PLUGINS = ['i18n_subsites', 'tipue_search']
 
 DIRECT_TEMPLATES = [
   'index',
@@ -54,6 +56,35 @@ DIRECT_TEMPLATES = [
   'search',
   'contact'
 ]
+
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n',
+                                    'jinja2.ext.autoescape',
+                                    'jinja2.ext.with_']}
+I18N_GETTEXT_LOCALEDIR = '../pelican-marble/locale/'
+I18N_GETTEXT_DOMAIN = 'messages'
+I18N_GETTEXT_NEWSTYLE = True
+
+I18N_SUBSITES = {
+  'de': {
+    'SITENAME': 'de_DE',
+    'LOCALE': 'de_DE',
+    'SITEDESCRIPTION': 'check this out de_DE',
+    'I18N_TEMPLATES_LANG': 'de'
+  },
+  'en': {
+    'SITENAME': 'en_US',
+    'LOCALE': 'en_US',
+    'SITEDESCRIPTION': 'check this out en_US'
+  },
+  'ru': {
+    'SITENAME': 'ru_RU',
+    'LOCALE': 'ru_RU',
+    'SITEDESCRIPTION': 'check this out ru_RU'
+  }
+
+}
+
+I18N_TEMPLATES_LANG = 'en'
 
 # MENUITEMS = [('Archives', 'archives.html')]
 
