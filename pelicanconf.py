@@ -15,6 +15,7 @@ SITEURL = ''
 # THEME = 'pelican-blue'
 THEME = 'pelican-marble'
 # THEME = 'flex'
+# THEME = 'graymill'
 
 PATH = 'content'
 # logo path, needs to be stored in PATH Setting
