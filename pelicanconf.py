@@ -5,6 +5,7 @@ import os
 
 AUTHOR = 'Claudio Walser'
 SITENAME = 'GITCD'
+SITEDESCRIPTION = 'GITCD - continuous delivery with git'
 SITEURL = ''
 # THEME = 'pelican-striped-html5up'
 # THEME = 'twenty-html5up'
