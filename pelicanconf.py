@@ -7,7 +7,6 @@ AUTHOR = 'Claudio Walser'
 SITENAME = 'GITCD'
 SITEDESCRIPTION = 'GITCD - continuous delivery with git'
 SITEURL = 'http://localhost'
-BASEURL = 'http://localhost'
 # THEME = 'pelican-striped-html5up'
 # THEME = 'twenty-html5up'
 # THEME = 'html5-dopetrope'
@@ -20,12 +19,10 @@ THEME = 'pelican-marble'
 
 PATH = 'content'
 # logo path, needs to be stored in PATH Setting
-LOGO = 'images/logo.svg'
+LOGO = '/images/logo.svg'
 
 TIMEZONE = 'Europe/Zurich'
 
-DEFAULT_LANG = 'de'
-LOCALE = 'de_DE'
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -57,34 +54,20 @@ DIRECT_TEMPLATES = [
   'contact'
 ]
 
-JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n',
-                                    'jinja2.ext.autoescape',
-                                    'jinja2.ext.with_']}
+JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 I18N_GETTEXT_LOCALEDIR = '../pelican-marble/locale/'
 I18N_GETTEXT_DOMAIN = 'messages'
 I18N_GETTEXT_NEWSTYLE = True
 
+I18N_TEMPLATES_LANG = 'en_US'
+DEFAULT_LANG = 'en_US'
+LOCALE = 'en_US'
 I18N_SUBSITES = {
   'de': {
-    'SITENAME': 'de_DE',
-    'LOCALE': 'de_DE',
-    'SITEDESCRIPTION': 'check this out de_DE',
-    'I18N_TEMPLATES_LANG': 'de'
-  },
-  'en': {
-    'SITENAME': 'en_US',
-    'LOCALE': 'en_US',
-    'SITEDESCRIPTION': 'check this out en_US'
-  },
-  'ru': {
-    'SITENAME': 'ru_RU',
-    'LOCALE': 'ru_RU',
-    'SITEDESCRIPTION': 'check this out ru_RU'
+    'SITENAME': 'de_DE'
   }
-
 }
 
-I18N_TEMPLATES_LANG = 'en'
 
 # MENUITEMS = [('Archives', 'archives.html')]
 
