@@ -6,6 +6,7 @@ Installation
 :icon: icon-download
 :summary: This is some short lead, you might like it!
 :use_disqus: True
+:lang: en
 
 Debian/Ubuntu
 

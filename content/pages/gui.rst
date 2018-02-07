@@ -6,5 +6,6 @@ GUI Usage
 :icon: icon-layout
 :summary: This is some short lead, you might like it!
 :use_disqus: True
+:lang: en
 
 How to use gitcd gui version

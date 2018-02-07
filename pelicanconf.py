@@ -43,6 +43,7 @@ PYGMENTS_RST_OPTIONS = {}
 
 PLUGIN_PATHS = ['../pelican-plugins']
 PLUGINS = ['i18n_subsites', 'tipue_search']
+# PLUGINS = ['tipue_search']
 
 DIRECT_TEMPLATES = [
   'index',
@@ -55,40 +56,38 @@ DIRECT_TEMPLATES = [
 ]
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
+JINJA_EXTENSIONS = ['jinja2.ext.i18n']
 I18N_GETTEXT_LOCALEDIR = '../pelican-marble/locale/'
 I18N_GETTEXT_DOMAIN = 'messages'
 I18N_GETTEXT_NEWSTYLE = True
 
-I18N_TEMPLATES_LANG = 'en_US'
-DEFAULT_LANG = 'en_US'
-LOCALE = 'en_US'
+I18N_TEMPLATES_LANG = 'en'
+DEFAULT_LANG = 'en'
+LOCALE = 'en'
 I18N_SUBSITES = {
-  'de': {
-    'SITENAME': 'de_DE'
-  }
+  'de': {}
 }
 
 
 # MENUITEMS = [('Archives', 'archives.html')]
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (
+  ('Pelican', 'http://getpelican.com/'),
+  ('Python.org', 'http://python.org/'),
+  ('Jinja2', 'http://jinja.pocoo.org/'),
+  ('You can modify those links in your config file', '#')
+)
 
 # Social widget
 SOCIAL = (
   ('Github', 'https://www.github.com/claudio-walser/gitcd'),
   ('Read the Docs', 'https://gitcd.readthedocs.io/en/latest/?badge=latest'),
-  ('Travis', 'https://travis-ci.org/claudio-walser/gitcd'),
-
-  # ('Google Plus', 'https://plus.google.com/+ClaudioWalser'),
-  # ('Twitter', 'https://www.twitter.com/claudio-walser'),
+  ('Travis', 'https://travis-ci.org/claudio-walser/gitcd')
 )
 
 ABOUT = {
-  'image': 'images/about.jpeg',
+  'image': '/images/about.jpeg',
   'mail': 'info@gitcd.io',
   'text': 'Learn more about the creator of gitcd or just drop a message.',
   'link': 'pages/contact.html'

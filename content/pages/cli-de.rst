@@ -1,13 +1,15 @@
-CLI Usage
+CLI Anwendung
 #################
 
 :order: 3
 :date: 2018-01-25 08:47
 :icon: icon-code-outline
-:summary: Short lead about usage of the cli version
+:summary: Kurzbeschreibung der CLI Anwendung
 :use_disqus: True
+:lang: de
+:slug: cli-de
 
-How to use gitcd cli version
+Wie man gitcd auf der Command Line verwendet
 
 .. code-block:: python
     :linenos: table
