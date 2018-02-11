@@ -106,7 +106,9 @@ ABOUT = {
     'de': 'Lesen Sie mehr über den Entwickler von gitcd oder lassen Sie mir eine Nachricht da.',
     'fr': 'je suis derrier'
   },
-  'link': 'contact.html'
+  'link': 'contact.html',
+  'address': 'Zürich, Schweiz',
+  'phone': '15552236'
 }
 
 HERO = [
