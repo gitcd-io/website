@@ -6,7 +6,7 @@ import os
 AUTHOR = 'Claudio Walser'
 SITENAME = 'GITCD'
 SITEDESCRIPTION = 'GITCD - continuous delivery with git'
-SITEURL = 'http://localhost'
+SITEURL = 'http://10.20.1.71'
 # THEME = 'pelican-striped-html5up'
 # THEME = 'twenty-html5up'
 # THEME = 'html5-dopetrope'
@@ -67,12 +67,10 @@ I18N_SUBSITES = {
   'en': {
     'PAGE_PATHS': ['pages/en'],
     'ARTICLE_PATHS': ['blog/en']
-  }, 
-  'fr': {
+  }, 'fr': {
     'PAGE_PATHS': ['pages/fr'],
     'ARTICLE_PATHS': ['blog/fr']
-  }, 
-  'es': {
+  }, 'es': {
     'PAGE_PATHS': ['pages/es'],
     'ARTICLE_PATHS': ['blog/es']
   }
@@ -81,7 +79,10 @@ I18N_SUBSITES = {
 PAGE_PATHS = ['pages/de']
 ARTICLE_PATHS = ['blog/de']
 
-# MENUITEMS = [('Archives', 'archives.html')]
+MENUITEMS = [
+  ('Archive', 'archives.html'),
+  ('Contact', 'contact.html')
+]
 
 # Blogroll
 LINKS = (
@@ -149,6 +150,7 @@ HERO = [
 
 DEFAULT_PAGINATION = 2
 
+GOOGLE_MAPS_KEY = 'AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA'
 
 def createIconsFile():
   filename = 'output/theme/css/icomoon.css'
