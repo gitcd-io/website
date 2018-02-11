@@ -56,18 +56,30 @@ DIRECT_TEMPLATES = [
 ]
 
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
-JINJA_EXTENSIONS = ['jinja2.ext.i18n']
 I18N_GETTEXT_LOCALEDIR = '../pelican-marble/locale/'
 I18N_GETTEXT_DOMAIN = 'messages'
 I18N_GETTEXT_NEWSTYLE = True
 
-I18N_TEMPLATES_LANG = 'en'
-DEFAULT_LANG = 'en'
-LOCALE = 'en'
+I18N_TEMPLATES_LANG = 'de_DE'
+DEFAULT_LANG = 'de'
+LOCALE = 'de_DE'
 I18N_SUBSITES = {
-  'de': {}
+  'en': {
+    'PAGE_PATHS': ['pages/en'],
+    'ARTICLE_PATHS': ['blog/en']
+  }, 
+  'fr': {
+    'PAGE_PATHS': ['pages/fr'],
+    'ARTICLE_PATHS': ['blog/fr']
+  }, 
+  'es': {
+    'PAGE_PATHS': ['pages/es'],
+    'ARTICLE_PATHS': ['blog/es']
+  }
 }
 
+PAGE_PATHS = ['pages/de']
+ARTICLE_PATHS = ['blog/de']
 
 # MENUITEMS = [('Archives', 'archives.html')]
 
@@ -89,15 +101,25 @@ SOCIAL = (
 ABOUT = {
   'image': '/images/about.jpeg',
   'mail': 'info@gitcd.io',
-  'text': 'Learn more about the creator of gitcd or just drop a message.',
-  'link': 'pages/contact.html'
+  'text': {
+    'en': 'Learn more about the creator of gitcd or just drop a message.',
+    'de': 'Lesen Sie mehr über den Entwickler von gitcd oder lassen Sie mir eine Nachricht da.',
+    'fr': 'je suis derrier'
+  },
+  'link': 'contact.html'
 }
 
 HERO = [
   {
     'image': '/images/hero1-backround.jpg',
-    'title': 'my first hero title',
-    'text': 'check this out',
+    'title': {
+      'en' :'my first hero title',
+      'de' :'Das ist ein Top Titel'
+    },
+    'text': {
+      'en': 'Learn more about the creator of gitcd or just drop a message.',
+      'de': 'Lesen Sie mehr über den Entwickler von gitcd oder lassen Sie mir eine Nachricht da.',
+    },
     'links': [
       {
         'icon': 'icon-code',

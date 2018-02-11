@@ -4,9 +4,9 @@
 :order: 1
 :date: 2018-01-25 08:46
 :icon: icon-link2
-:summary: Hier kommt etwas deutsches
+:summary: Ein bisschen was über mich
 :lang: de
-:slug: ueber
 :translation: true
+:slug: about
 
-Über gitcd und den Author
+Über gitcd und dessen Author
