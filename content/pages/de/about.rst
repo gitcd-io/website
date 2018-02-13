@@ -4,12 +4,12 @@
 :order: 1
 :date: 2018-01-25 08:46
 :icon: icon-link2
-:summary: Lernen Sie mehr über den Author dieser Theme
+:summary: Erfahren Sie mehr über den Author von gitcd.
 :lang: de
 :slug: about
 
-Über den Author dieser Theme
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Über den Author von gitcd
+~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 Beruflich
@@ -17,21 +17,46 @@ Beruflich
 .. container:: float-left
 
     .. image:: /images/about/about.jpeg
-        :width: 150px
+        :width: 100px
 
-Wie Sie sicher sehen können mag ich Wallace und Gromit. Ich bin Software Entwickler und System Administrator und Python ist meine Lieblingssprache. Ich kann HTML/CSS/JS aber es ist definitiv nicht meine Lieblingsbeschäftigung. PHP Code schreibe ich auch. Und auch wenn ich PHP nicht besonders gerne mag, ist es dennoch eine nützliche Sprache. Aktuell versuche ich mich etwas in GoLang (ich vermisse aber Exceptions) und ich hasse Ruby und Perl. Dafür gefällt mir NodeJS auch.
-Bash ist sehr nützlich und zugleich sehr hässlich.
+Arbeit
+______
+Ich arbeite als Software Entwickler/System Administrator und mag Python am meisten. Zur Zeit bin ich bei der Schweizerischen Radio und Fernsehgesellschaft angestellt. Das ist eine der interessantesten Tätigkeiten die ich bis jetzt ausgeübt habe. Die grosse Software- und Systemlandschaft machen meine tägliche Arbeit hier so spannend. Ich lerne, auch nach über 5 Jahren, fast täglich Neues. Das Team ist grossartig, was eines der wichtigsten Dinge ist aus meiner Sicht.
 
-Als Systemadministrator betreue ich Debian Server und habe eine starke Abneigung gegen Windows. Ich mag auch kein Mac OSX, auch wenn es immer noch besser ist als Windows.
-Privat habe ich meistens Ubuntu auf meinen Rechnern.
+Als Hobby beschäftige ich mich ganz gerne mit IT-Sicherheit. Ich glaube die Sicherheit wird eine zunehmende Rolle spielen in der IT, besonders in Zeiten des Internet of Things in denen jedes Gerät "smart" wird und vernetzt ist. Wenn sogar mein Fahrzeug kompromittiert werden kann, wird es definitiv zum Problem. Fun-Fact, das durchschnittliche Kraftfahrzeug heutzutage enthält rund 10 Millionen Zeilen Code.
 
 
-Freizeit
---------
+Sprachen
+________
+Wie ich bereits erwähnte, meine Leidenschaft is sicher **Python**, vorzugsweise in der Version 3. Auch wenn ich Web Frontends mit **HTML/CSS/JS** schreiben kann, ist es nicht meine favorisierte Arbeit. Aktuell versuche ich gerade meine Kenntnisse in **golang** zu erweitern. Bis jetzt stört mich nur das Fehlen von Exceptions. Als System Administrator bin ich natürlich fit in Bash und auch wenn ich Bash sehr hässlich finde ist es dennoch ein wichtiger und nützlicher Helfer in meiner täglichen Arbeit. In der Vergangenheit habe ich auch schon Projekte mit **NodeJS** abgewickelt, das einige sehr interessante Ansätze hat. Ich versuche Ruby und Perl zu vermeiden, besonders Perl, das hasse ich wirklich.
+
+
+System Administrator
+____________________
+Als System Administrator betreue ich hauptsächlich Server mit Debian Linux und ich habe eine starke Abneigung gegen Windows. Ich mag auch Mac OSX nicht besonders aber es ist doch um einiges besser als Windows.
+Auf meinen privaten Geräten bevorzuge ich Ubuntu.
+
+
+Spare time
+----------
 .. container:: float-right
 
     .. image:: /images/about/hiking.jpg
         :width: 250px
 
-In meiner Freizeit war ich früher gerne und oft Klettern. Heute bin ich aber hauptsächlich stolzer Vater eines grossartigen Mädchens. Ausserdem habe ich in den letzten Jahren leicht (sehr viel) zugenommen weshalb ich vermutlich so oder so nicht mehr so viel Klettern würde. Dennoch sind wir sehr gerne in den Bergen unterwegs, beim Wandern, Skifahren oder einfach beim Entspannen. Ausserdem liebe ich das Segeln in starkem (zumindest aus meiner Sicht, für Andere ist das vielleicht nur eine Brise) Wind. Ich liebe es in meiner kleinen Byte CII nass zu werden und dem Wind zu trotzen. Meine Segeleinheiten dauern meistens so 2 bis 3 Stunden was in etwa 400 Rumpfbeugen entspricht ;-)
-Meine Fähigkeiten sind vermutlich noch weit unten angesiedelt, nichts desto trotz habe ich jede Menge Spass dabei.
+Meine Freizeit verbringe ich mit vielen verschiedenen Aktivitäten. Vermutlich zu viele sie seriös zu betreiben.
+
+Vater
+_____
+Als Hauptaktivität bin ich zur Zeit hauptsächlich Vater eines grossartigen, jungen Mädchens. Wie viele von euch sicher wissen ist es eine sehr fordernde aber zugleich erfüllende Aufgabe.
+
+Klettern
+________
+Meine Frau und ich waren früher oft und gerne beim Klettern und in der Schweiz haben wir zum Glück viele Möglichkeiten dazu. Seit unser Kind aber hier ist (und ich in den letzten Jahren eine menge Gewicht zugelegt habe) klettern wir leider nicht mehr all zu viel. Ich hoffe das wird sich in Zukunft wieder ändern da ich persönlich viel dabei lernte - körperlich wie mental.
+
+Wir verbringen immer noch gerne Zeit in den Bergen, beim Wandern, Skifahren oder einfach zur Entspannung.
+
+Segeln
+______
+
+Seit einigen Jahren bin ich Besitzer eine Byte CII, was ein höllischer Spass ist. Letztes Jahr hatte ich am meisten Spass in Windstärken von 4bft bis maximal 5bft. Üblicherweise segle am Walensee (https://de.wikipedia.org/wiki/Walensee) der eigentlich immer zuverlässige Windverhältnisse bietet. Meine seglersichen Fähigkeiten halten sich in Grenzen, vielleicht ist aber auch genau das der Grund warum ich es so mag.
