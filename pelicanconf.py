@@ -6,7 +6,7 @@ import os
 AUTHOR = 'Claudio Walser'
 SITENAME = 'FH5CO Marble Example'
 SITEDESCRIPTION = 'this is just an example page for the pelican-fh5co-marble theme.'
-SITEURL = 'http://localhost:8081'
+SITEURL = 'http://localhost'
 
 # plugins
 PLUGIN_PATHS = ['../pelican-plugins']
