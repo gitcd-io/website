@@ -4,7 +4,7 @@
 :order: 1
 :date: 2018-01-25 08:46
 :icon: icon-link2
-:summary: Erfahren Sie mehr über den Author von gitcd.
+:summary: Erfahre mehr über den Author von gitcd.
 :lang: de
 :slug: about
 
@@ -14,9 +14,10 @@
 
 Beruflich
 ---------
-.. container:: float-left
+.. container:: float-left image
 
     .. image:: /images/about/about.jpeg
+        :alt: Profil Bild
         :width: 100px
 
 Arbeit
@@ -42,6 +43,7 @@ Spare time
 .. container:: float-right
 
     .. image:: /images/about/hiking.jpg
+        :alt: Wandern
         :width: 250px
 
 Meine Freizeit verbringe ich mit vielen verschiedenen Aktivitäten. Vermutlich zu viele sie seriös zu betreiben.

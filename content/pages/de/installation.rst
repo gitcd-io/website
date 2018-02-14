@@ -9,16 +9,16 @@ Installation
 :slug: installation
 :use_disqus: true
 
-Installation of gitcd
-~~~~~~~~~~~~~~~~~~~~~
+Installation von gitcd
+~~~~~~~~~~~~~~~~~~~~~~
 
 
-Pre requisites
---------------
-Gitcd needs some pre requisites in order to work properly. First of all it is written in Python3.
-Then for the gui (which is not far in progress right now) you need to install kivy and kivyMD which is not that easy and very time intense to do by python setuptools.
+Voraussetzungen
+---------------
+Gitcd setzt gewisse Software und Python Module voraus. Zu allererst, gitcd ist in Python3 geschrieben.
+Für das gui (welches aktuell nicht weit forgeschritten ist) musst du kivy und kivyMD installieren. Die Installation von kivy über die Python setuptools ist leider nicht gerade einfach und vor allem sehr Zeitintensiv.
 
-Following are the steps to install all the pre requisites on MacOSX and on Ubuntu (might apply to any Debian derivate).
+Führe die folgenden Schritte aus um gitcd sauber auf Mac MacOSX und auf Ubuntu (klappt vermutlich auf allen Debian Derivaten).
 
 MacOSX
 ______
@@ -44,26 +44,26 @@ _______________
 
 Installation of gitcd itself
 ----------------------------
-Now you are ready to install gitcd itself, which is quite easy using pip.
+Du bist jetzt bereit gitcd selbst zu installieren, mit pip ist das sehr einfach.
 
-.. code:: bash
+.. code-block:: bash
 
     pip3 install --user --upgrade gitcd
 
-Trouble using git-cd?
----------------------
-If the command "git-cd" or "git cd" is not available now, you probably need to add the pip binary path to your $PATH variable.
+Probleme git-cd auf der cli zu verwenden?
+-----------------------------------------
+Wenn du jetzt keinen cli Befehl "git-cd" oder "git cd" verfügbar hast musst du vermutlich den Pfad installierter Python Programme in deine lokale $PATH Variable aufnehmen.
 
 MacOSX
 ______
 
-Open ~/.bash_profile in your favorite editor and add the following lines at the end of the file.
+Öffne ~/.bash_profile in deinem bevorzugten Editor und füge die folgenden Zeilen am Ende der Datei hinzu.
 
-.. container:: warning
+.. container:: alert alert-warning
 
-    Replace <python-version> with your currently installed python version
+    Ersetze <python-version> mit deiner installierten Python Version
 
-.. code:: bash
+.. code-block:: bash
 
     if [ -d "$HOME/Library/Python/<python-version>/bin" ] ; then
         PATH="$HOME/Library/Python/<python-version>/bin:$PATH"
@@ -72,9 +72,9 @@ Open ~/.bash_profile in your favorite editor and add the following lines at the 
 Ubuntu / Debian
 _______________
 
-Open ~/.profile in your favorite editor and add the following lines at the end of the file.
+Öffne ~/.profile in deinem bevorzugten Editor und füge die folgenden Zeilen am Ende der Datei hinzu
 
-.. code:: bash
+.. code-block:: bash
 
     if [ -d "$HOME/.local/bin" ] ; then
         PATH="$HOME/.local/bin:$PATH"
@@ -82,3 +82,21 @@ Open ~/.profile in your favorite editor and add the following lines at the end o
 
 Argument Completion
 -------------------
+Gitcd unterstützt argument completion, um das Feature zu aktivieren führe die folgenden Schritte aus.
+
+MacOSX
+______
+
+Unter OSX ist das leider gar nicht so einfach. Globale argument completion setzt Bash Unterstützung für complete -D voraus. Dieses Feature hat erst mit Bash Version 4.2 Einzug erhalten. Unter OSX und älteren Linux Systemen musst du deine Bash aktualisieren um dieses Feature nutzen zu können.
+Prüfe deine aktuelle Bash Version mit echo $BASH_VERSION. Unter OSX kannst du deine Bash mit Homebrew aktualisieren (brew install bash), dann den Pfad /usr/local/bin/bash zu /etc/shells hinzufügen und schliesslich chsh ausführen um die Änderung zu aktivieren.
+
+Du möchtest dir vielleicht die offizielle Dokumentation hierzu durchlesen https://argcomplete.readthedocs.io/en/latest/#global-completion
+
+Aktiviere argcompletion Systemweit
+__________________________________
+
+Jetzt bist du bereit argcompletion für Python Systemweit zu aktivieren, führe dazu das folgende Kommando aus.
+
+.. code-block:: bash
+
+    activate-global-python-argcomplete

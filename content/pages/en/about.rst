@@ -17,6 +17,7 @@ Profession
 .. container:: float-left
 
     .. image:: /images/about/about.jpeg
+        :alt: Profile Image
         :width: 100px
 
 Job
@@ -40,6 +41,7 @@ Spare time
 .. container:: float-right
 
     .. image:: /images/about/hiking.jpg
+        :alt: Hiking
         :width: 250px
 
 In my spare time, I do alot of different things. Probably too much to practice all of it seriously.
