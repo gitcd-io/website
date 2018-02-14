@@ -112,7 +112,7 @@ USE_FOLDER_AS_CATEGORY = True
 PAGE_ORDER_BY = 'order'
 
 MENUITEMS = [
-  ('Archive', 'archives.html'),
+  # ('Archive', 'archives.html'),
   ('Contact', 'contact.html')
 ]
 
