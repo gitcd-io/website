@@ -3,7 +3,7 @@ Installation
 
 :order: 2
 :date: 2018-01-25 08:46
-:icon: icon-code-outline
+:icon: icon-download
 :summary: Wie man gitcd installiert.
 :lang: de
 :slug: installation
@@ -15,10 +15,8 @@ Installation von gitcd
 
 Voraussetzungen
 ---------------
-Gitcd setzt gewisse Software und Python Module voraus. Zu allererst, gitcd ist in Python3 geschrieben.
-Für das gui (welches aktuell nicht weit forgeschritten ist) musst du kivy und kivyMD installieren. Die Installation von kivy über die Python setuptools ist leider nicht gerade einfach und vor allem sehr Zeitintensiv.
-
-Führe die folgenden Schritte aus um gitcd sauber auf Mac MacOSX und auf Ubuntu (klappt vermutlich auf allen Debian Derivaten).
+Gitcd ist in Python3 geschrieben. Die meisten Systeme haben immer noch Python2 als Standard installiert.
+Daher musst du erstmal Python3 installieren um gitcd sauber ausführen zu können.
 
 MacOSX
 ______
@@ -26,11 +24,6 @@ ______
 .. code-block:: bash
 
     brew install python3
-    brew install pkg-config sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer
-    pip3 install -I Cython==0.25.2
-    pip3 install kivy
-    pip3 install kivymd
-
 
 Ubuntu / Debian
 _______________
@@ -38,17 +31,16 @@ _______________
 .. code-block:: bash
 
     sudo apt-get install python3 python3-pip
-    sudo apt-get install python3-kivy
-    pip3 install kivymd
 
 
-Installation of gitcd itself
-----------------------------
+Installation von gitcd
+----------------------
 Du bist jetzt bereit gitcd selbst zu installieren, mit pip ist das sehr einfach.
 
 .. code-block:: bash
 
     pip3 install --user --upgrade gitcd
+
 
 Probleme git-cd auf der cli zu verwenden?
 -----------------------------------------
@@ -79,6 +71,7 @@ _______________
     if [ -d "$HOME/.local/bin" ] ; then
         PATH="$HOME/.local/bin:$PATH"
     fi
+
 
 Argument Completion
 -------------------

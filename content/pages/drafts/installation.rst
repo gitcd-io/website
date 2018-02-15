@@ -15,8 +15,10 @@ Installation of gitcd
 
 Pre requisites
 --------------
-Gitcd is written in Python3. Most systems still deliver with Python2 as default.
-You need to install Python3 in order to run gitcd properly.
+Gitcd needs some pre requisites in order to work properly. First of all it is written in Python3.
+Then for the gui (which is not far in progress right now) you need to install kivy and kivyMD which is not that easy and very time intense to do by python setuptools.
+
+Following are the steps to install all the pre requisites on MacOSX and on Ubuntu (might apply to any Debian derivate).
 
 MacOSX
 ______
@@ -24,6 +26,11 @@ ______
 .. code-block:: bash
 
     brew install python3
+    brew install pkg-config sdl2 sdl2_image sdl2_ttf sdl2_mixer gstreamer
+    pip3 install -I Cython==0.25.2
+    pip3 install kivy
+    pip3 install kivymd
+
 
 Ubuntu / Debian
 _______________
@@ -31,6 +38,8 @@ _______________
 .. code-block:: bash
 
     sudo apt-get install python3 python3-pip
+    sudo apt-get install python3-kivy
+    pip3 install kivymd
 
 
 Installation of gitcd itself

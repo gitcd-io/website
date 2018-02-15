@@ -26,11 +26,9 @@ Ich arbeite als Software Entwickler/System Administrator und mag Python am meist
 
 Als Hobby beschäftige ich mich ganz gerne mit IT-Sicherheit. Ich glaube die Sicherheit wird eine zunehmende Rolle spielen in der IT, besonders in Zeiten des Internet of Things in denen jedes Gerät "smart" wird und vernetzt ist. Wenn sogar mein Fahrzeug kompromittiert werden kann, wird es definitiv zum Problem. Fun-Fact, das durchschnittliche Kraftfahrzeug heutzutage enthält rund 10 Millionen Zeilen Code.
 
-
 Sprachen
 ________
 Wie ich bereits erwähnte, meine Leidenschaft is sicher **Python**, vorzugsweise in der Version 3. Auch wenn ich Web Frontends mit **HTML/CSS/JS** schreiben kann, ist es nicht meine favorisierte Arbeit. Aktuell versuche ich gerade meine Kenntnisse in **golang** zu erweitern. Bis jetzt stört mich nur das Fehlen von Exceptions. Als System Administrator bin ich natürlich fit in Bash und auch wenn ich Bash sehr hässlich finde ist es dennoch ein wichtiger und nützlicher Helfer in meiner täglichen Arbeit. In der Vergangenheit habe ich auch schon Projekte mit **NodeJS** abgewickelt, das einige sehr interessante Ansätze hat. Ich versuche Ruby und Perl zu vermeiden, besonders Perl, das hasse ich wirklich.
-
 
 System Administrator
 ____________________
@@ -60,5 +58,4 @@ Wir verbringen immer noch gerne Zeit in den Bergen, beim Wandern, Skifahren oder
 
 Segeln
 ______
-
 Seit einigen Jahren bin ich Besitzer eine Byte CII, was ein höllischer Spass ist. Letztes Jahr hatte ich am meisten Spass in Windstärken von 4bft bis maximal 5bft. Üblicherweise segle am Walensee (https://de.wikipedia.org/wiki/Walensee) der eigentlich immer zuverlässige Windverhältnisse bietet. Meine seglersichen Fähigkeiten halten sich in Grenzen, vielleicht ist aber auch genau das der Grund warum ich es so mag.
