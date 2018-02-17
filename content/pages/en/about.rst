@@ -7,6 +7,7 @@ About
 :summary: Learn about the author gitcd.
 :lang: en
 :slug: about
+:show_on_home: false
 
 About the author of gitcd
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -18,7 +19,7 @@ Profession
 
     .. image:: /images/about/about.jpeg
         :alt: Profile Image
-        :width: 100px
+        :width: 200px
 
 Job
 ___
@@ -38,11 +39,11 @@ Also on my private machines, i prefer Ubuntu.
 
 Spare time
 ----------
-.. container:: float-right
+.. container:: float-left
 
     .. image:: /images/about/hiking.jpg
         :alt: Hiking
-        :width: 250px
+        :width: 200px
 
 In my spare time, I do alot of different things. Probably too much to practice all of it seriously.
 

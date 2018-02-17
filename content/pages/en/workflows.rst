@@ -3,7 +3,7 @@ Workflow
 
 :order: 5
 :date: 2018-01-25 08:46
-:icon: icon-layout
+:icon: icon-flow-children
 :summary: Workflow and possible obstacles.
 :lang: en
 :slug: workflow
