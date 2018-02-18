@@ -6,7 +6,7 @@ import os
 AUTHOR = 'Claudio Walser'
 SITENAME = 'GITCD Website'
 SITEDESCRIPTION = 'This is an info page about gitcd. Mainly about its installation and usage.'
-SITEURL = 'http://localhost'
+SITEURL = 'http://10.20.1.71'
 
 # plugins
 PLUGIN_PATHS = ['../pelican-plugins']
@@ -28,15 +28,6 @@ LOCALE = 'en_US'
 PATH = 'content'
 PAGE_PATHS = ['pages/en']
 ARTICLE_PATHS = ['blog/en']
-
-# i18n
-# I18N_SUBSITES = {
-#   'de': {
-#     'PAGE_PATHS': ['pages/de'],
-#     'ARTICLE_PATHS': ['blog/de'],
-#     'LOCALE': 'de_DE'
-#   }
-# }
 
 # logo path, needs to be stored in PATH Setting
 LOGO = '/images/logo.svg'
