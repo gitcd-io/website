@@ -12,7 +12,7 @@ GUI Usage
 GUI Usage of gitcd
 ~~~~~~~~~~~~~~~~~~~~~
 
-There is not much to say about the gui yet. It is in a very early state and far from being functional. The gui uses the great kivy library with the beautiful kivyMD on top of it. If you want to take a sneak peak, you can open it from the command line using the following command.
+There is not much to say about the gui yet. It is in a very early state and far from being functional. The gui uses the great kivy library with the beautiful kivyMD on top of it. If you want to take a sneak peek, you can open it from the command line using the following command.
 
 .. code-block:: bash
 
