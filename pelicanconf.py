@@ -6,7 +6,7 @@ import os
 AUTHOR = 'Claudio Walser'
 SITENAME = 'GITCD Website'
 SITEDESCRIPTION = 'This is an info page about gitcd. Mainly about its installation and usage.'
-SITEURL = 'http://10.20.1.71'
+SITEURL = 'http://www.gitcd.io'
 
 # plugins
 PLUGIN_PATHS = ['../pelican-plugins']
@@ -99,7 +99,6 @@ USE_FOLDER_AS_CATEGORY = True
 PAGE_ORDER_BY = 'order'
 
 MENUITEMS = [
-  # ('Archive', 'archives.html'),
   ('Contact', 'contact.html')
 ]
 
@@ -114,26 +113,8 @@ DIRECT_TEMPLATES = [
 ]
 
 # setup disqus
-DISQUS_SHORTNAME = 'gitcd-dev'
+DISQUS_SHORTNAME = 'gitcd'
 DISQUS_ON_PAGES = False # if true its just displayed on every static page, like this you can still enable it per page
 
 # setup google maps
-GOOGLE_MAPS_KEY = 'AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA'
-
-def createIconsFile():
-  filename = 'output/theme/css/icomoon.css'
-  icons = []
-  if not os.path.isfile(filename):
-    return icons
-  with open(filename) as file:
-    content = file.read()
-    lines = content.split("\n")
-    for line in lines:
-      if line.startswith('.icon-'):
-        lineParts = line.split(':')
-        iconClass = lineParts[0].replace('.icon-', 'icon-')
-
-        icons.append(iconClass)
-    return icons
-
-ICONS = createIconsFile()
+GOOGLE_MAPS_KEY = 'AIzaSyCYepGkax6lv4UTfTCF6980IUNvVjbhMdA'
