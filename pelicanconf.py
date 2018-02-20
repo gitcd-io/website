@@ -9,13 +9,13 @@ SITEDESCRIPTION = 'This is an info page about gitcd. Mainly about its installati
 SITEURL = 'https://www.gitcd.io'
 
 # plugins
-PLUGIN_PATHS = ['../pelican-plugins']
+PLUGIN_PATHS = ['./pelican-plugins']
 PLUGINS = ['i18n_subsites', 'tipue_search']
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 # theme and theme localization
-THEME = '../pelican-fh5co-marble'
-I18N_GETTEXT_LOCALEDIR = '../pelican-fh5co-marble/locale/'
+THEME = './pelican-fh5co-marble'
+I18N_GETTEXT_LOCALEDIR = './pelican-fh5co-marble/locale/'
 I18N_GETTEXT_DOMAIN = 'messages'
 I18N_GETTEXT_NEWSTYLE = True
 TIMEZONE = 'Europe/Zurich'
@@ -87,7 +87,7 @@ ABOUT = {
   'text': 'Drop me a message if you like.',
   'link': 'contact.html',
   # the address is also taken for google maps
-  'address': 'Zürich, Schweiz'
+  'address': 'Zürich, Switzerland'
 }
 
 # navigation and homepage options
