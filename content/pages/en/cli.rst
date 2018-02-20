@@ -12,18 +12,18 @@ CLI Usage
 CLI Usage of gitcd
 ~~~~~~~~~~~~~~~~~~~~~
 
-For convenience, you can call gitcd as a git subcommand as well. Therefore you can replace "git-cd" in any of the following commands with "git cd" if you like it more.
+For convenience, you can call gitcd as a git sub command as well. Therefore, you can replace "git-cd" in any of the following commands with "git cd" if you like it more.
 
 
 .. container:: alert alert-warning
 
-    Note: Python argument completion wont work if you use it as a git subcommand!
+    Note: Python argument completion wont work if you use it as a git sub command!
 
 
 Initializing gitcd
 ------------------
 First of all you probably want to initialize one of your local git repositories with gitcd. Change directory to one of your local git repositories and run git-cd init.
-Most of the values should be very self-explanatory. Still here is a complete list of values you can pass.
+Most of the values should be very self-explanatory. Still, here is a complete list of values you can pass.
 
 - **Branch name for production releases?**
 
@@ -35,7 +35,7 @@ Most of the values should be very self-explanatory. Still here is a complete lis
 
 - **Branch name for test releases?**
 
-  - Pass your branch name where you want to merge code into while executing git-cd test. Let it empty if you dont want to use that feature. At work, we have this for many repositories set to **test**.
+  - Pass your branch name where you want to merge code into while executing git-cd test. Let it empty if you don't want to use that feature. At work, we have this for many repositories set to **test**.
 
 - **Version tag prefix?**
 
@@ -45,7 +45,7 @@ Most of the values should be very self-explanatory. Still here is a complete lis
 
   - This is about how git-cd release gets your current version number you want to release.
 
-    - manual meens you'll get asked to enter the version number by hand
+    - manual means you'll get asked to enter the version number by hand
     - file means gitcd reads the version number from a file, you'll be asked from which file in the next step
     - date means you generate a version number from a date scheme, you'll be asked for the scheme later. As a date version scheme, you can pass any directive for http://strftime.org/.
 
@@ -82,7 +82,7 @@ Gitcd is able to check your local version with the one published on pypi and upg
 
 Clean up local branches
 -----------------------
-The tool is able to cleanup all local branches which doesent exist on the origins. This is done with the clean command.
+The tool is able to cleanup all local branches which doesn't exist on remotes. This is done with the clean command.
 
 .. code-block:: bash
 
@@ -96,7 +96,7 @@ The tool is able to cleanup all local branches which doesent exist on the origin
 
 Start a new feature
 -------------------
-Starts a new feature branch from your master branch. If you dont pass a branchname, you will be asked later.
+Starts a new feature branch from your master branch. If you don't pass a branch name, you will be asked later.
 
 .. code-block:: bash
 
@@ -110,10 +110,10 @@ Starts a new feature branch from your master branch. If you dont pass a branchna
 
 Testing a feature
 -----------------
-You might have a testing environment or want to run some integration test on a shared or common branch without the need to push out your feature with the next release. Therfore you cant merge it into the master. Thats exactly why the git-cd test command exists. You might even have some dedicated tester checking the new feature on this specific branch. So to merge your new feature into your testing branch you call this command, if you dont pass a branch name, your current feature branch will be merged.
+You might have a testing environment or want to run some integration test on a shared or common branch without the need to push out your feature with the next release. Therefore you can't merge it into the master. That's exactly why the git-cd test command exists. You might even have some dedicated tester checking the new feature on this specific branch. So to merge your new feature into your testing branch you call this command, if you don't pass a branch name, your current feature branch will be merged.
 
 .. code-block:: bash
-    
+
     git-cd test <branchname>
 
 .. container:: responsive-image
@@ -124,10 +124,10 @@ You might have a testing environment or want to run some integration test on a s
 
 Open a pull request for code review
 -----------------------------------
-Opens a pull request to your master branch. If you dont pass a branchname, your current branch will be taken.
+Opens a pull request to your master branch. If you don't pass a branch name, your current branch will be taken.
 
 .. code-block:: bash
-    
+
     git-cd review <branchname>
 
 .. container:: responsive-image
@@ -138,10 +138,10 @@ Opens a pull request to your master branch. If you dont pass a branchname, your 
 
 See the status of a pull request
 --------------------------------
-You can see the status of a pull request directly in the command line. If you dont pass a branchname, your current branch will be taken.
+You can see the status of a pull request directly in the command line. If you don't pass a branch name, your current branch will be taken.
 
 .. code-block:: bash
-    
+
     git-cd status <branchname>
 
 .. container:: responsive-image
@@ -151,10 +151,10 @@ You can see the status of a pull request directly in the command line. If you do
 
 Finish a feature branch
 -----------------------
-If your pull request got approved by a fellow developer and all your tests were running properly, you probably want to merge your feature into the master branch. If you dont pass a branch name, your current branch will be taken.
+If your pull request got approved by a fellow developer and all your tests were running properly, you probably want to merge your feature into the master branch. If you don't pass a branch name, your current branch will be taken.
 
 .. code-block:: bash
-    
+
     git-cd finish <branchname>
 
 .. container:: responsive-image
@@ -165,10 +165,10 @@ If your pull request got approved by a fellow developer and all your tests were 
 
 Compare different branches or tags
 ----------------------------------
-By now, your code is in the master branch. Personally, I always like to see what I am going to release by comparing the current branch (which is master after the finish) against the latest tag. If you dont pass a branch or tag name, the latest tag will be taken.
+By now, your code is in the master branch. Personally, I always like to see what I am going to release by comparing the current branch (which is master after the finish) against the latest tag. If you don't pass a branch or tag name, the latest tag will be taken.
 
 .. code-block:: bash
-    
+
     git-cd compare <branchname>||<tagname>
 
 .. container:: responsive-image
@@ -182,7 +182,7 @@ Release a new version
 Now your feature is merged and you made sure you know the changes going out, you are ready to ship it. This command creates a new tag from the master branch and executes any command you've setup in the initialize command.
 
 .. code-block:: bash
-    
+
     git-cd release
 
 .. container:: responsive-image

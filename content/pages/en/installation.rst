@@ -82,9 +82,9 @@ ______
 
 Under OSX it isn't that simple unfortunately. Global completion requires bash support for complete -D, which was introduced in bash 4.2. On OS X or older Linux systems, you will need to update bash to use this feature. Check the version of the running copy of bash with echo $BASH_VERSION. On OS X, install bash via Homebrew (brew install bash), add /usr/local/bin/bash to /etc/shells, and run chsh to change your shell.
 
-You might consider reading the docs for argcompletion https://argcomplete.readthedocs.io/en/latest/#global-completion
+You might consider reading the docs for argcomplete https://argcomplete.readthedocs.io/en/latest/#global-completion
 
-Activate Global argcompletion
+Activate Global argcomplete
 _____________________________
 
 You are now ready to activate global argcompletion for python with the following command.
