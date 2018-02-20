@@ -6,7 +6,7 @@ import os
 AUTHOR = 'Claudio Walser'
 SITENAME = 'GITCD Website'
 SITEDESCRIPTION = 'This is an info page about gitcd. Mainly about its installation and usage.'
-SITEURL = 'http://www.gitcd.io'
+SITEURL = 'https://www.gitcd.io'
 
 # plugins
 PLUGIN_PATHS = ['../pelican-plugins']
