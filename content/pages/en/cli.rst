@@ -12,7 +12,7 @@ CLI Usage
 CLI Usage of gitcd
 ~~~~~~~~~~~~~~~~~~~~~
 
-For convenience, you can call gitcd as a git sub command as well. Therefore, you can replace "git-cd" in any of the following commands with "git cd" if you like it more.
+For convenience, you can call gitcd as a git sub command as well as directly. Therefore, you can replace "git cd" in any of the following commands with "git-cd" if you like it more.
 
 
 .. container:: alert alert-warning
@@ -56,14 +56,14 @@ Most of the values should be very self-explanatory. Still, here is a complete li
 
 .. code-block:: bash
 
-    git-cd init
+    git cd init
 
 The image below represents the configuration for gitcd itself.
 
 .. container:: responsive-image
 
     .. image:: /images/cli/git-cd_init.png
-        :alt: git-cd init
+        :alt: git cd init
 
 
 Check version and upgrade
@@ -72,12 +72,12 @@ Gitcd is able to check your local version with the one published on pypi and upg
 
 .. code-block:: bash
 
-    git-cd upgrade
+    git cd upgrade
 
 .. container:: responsive-image
 
     .. image:: /images/cli/git-cd_upgrade-2.png
-        :alt: git-cd upgrade
+        :alt: git cd upgrade
 
 
 Clean up local branches
@@ -86,12 +86,12 @@ The tool is able to cleanup all local branches which doesn't exist on remotes. T
 
 .. code-block:: bash
 
-    git-cd clean
+    git cd clean
 
 .. container:: responsive-image
 
     .. image:: /images/cli/git-cd_clean-2.png
-        :alt: git-cd clean
+        :alt: git cd clean
 
 
 Start a new feature
@@ -100,12 +100,12 @@ Starts a new feature branch from your master branch. If you don't pass a branch 
 
 .. code-block:: bash
 
-    git-cd start <branchname>
+    git cd start <branchname>
 
 .. container:: responsive-image
 
     .. image:: /images/cli/git-cd_start.png
-        :alt: git-cd start
+        :alt: git cd start
 
 
 Testing a feature
@@ -114,12 +114,12 @@ You might have a testing environment or want to run some integration test on a s
 
 .. code-block:: bash
 
-    git-cd test <branchname>
+    git cd test <branchname>
 
 .. container:: responsive-image
 
     .. image:: /images/cli/git-cd_test.png
-        :alt: git-cd test
+        :alt: git cd test
 
 
 Open a pull request for code review
@@ -128,12 +128,12 @@ Opens a pull request to your master branch. If you don't pass a branch name, you
 
 .. code-block:: bash
 
-    git-cd review <branchname>
+    git cd review <branchname>
 
 .. container:: responsive-image
 
     .. image:: /images/cli/git-cd_review.png
-        :alt: git-cd review
+        :alt: git cd review
 
 
 See the status of a pull request
@@ -142,12 +142,12 @@ You can see the status of a pull request directly in the command line. If you do
 
 .. code-block:: bash
 
-    git-cd status <branchname>
+    git cd status <branchname>
 
 .. container:: responsive-image
 
     .. image:: /images/cli/git-cd_status.png
-        :alt: git-cd status
+        :alt: git cd status
 
 Finish a feature branch
 -----------------------
@@ -155,12 +155,12 @@ If your pull request got approved by a fellow developer and all your tests were 
 
 .. code-block:: bash
 
-    git-cd finish <branchname>
+    git cd finish <branchname>
 
 .. container:: responsive-image
 
     .. image:: /images/cli/git-cd_finish.png
-        :alt: git-cd finish
+        :alt: git cd finish
 
 
 Compare different branches or tags
@@ -169,12 +169,12 @@ By now, your code is in the master branch. Personally, I always like to see what
 
 .. code-block:: bash
 
-    git-cd compare <branchname>||<tagname>
+    git cd compare <branchname>||<tagname>
 
 .. container:: responsive-image
 
     .. image:: /images/cli/git-cd_compare.png
-        :alt: git-cd compare
+        :alt: git cd compare
 
 
 Release a new version
@@ -183,9 +183,9 @@ Now your feature is merged and you made sure you know the changes going out, you
 
 .. code-block:: bash
 
-    git-cd release
+    git cd release
 
 .. container:: responsive-image
 
     .. image:: /images/cli/git-cd_release.png
-        :alt: git-cd release
+        :alt: git cd release
