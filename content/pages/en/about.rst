@@ -1,63 +1,39 @@
-About the author
+About
 ################
 
 :order: 1
 :date: 2018-01-25 08:46
 :icon: icon-link2
-:summary: Learn about the author gitcd.
+:summary: Learn about gitcd.
 :lang: en
 :slug: about
-:show_on_home: false
 
-About the author of gitcd
+
+About gitcd
 ~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-Profession
-----------
-.. container:: float-left
+Why the heck another tool for continuous delivery you might ask? Eligible question i might say. The main reason is that existing tools like gitflow, hubflow or reflow just didn't quite matched the desired `workflow`_. in the company i currently work. Branching models like nvie are very complicated and might be confusing to people which are new to git or cd in general.
 
-    .. image:: /images/about/about.jpeg
-        :alt: Profile Image
-        :width: 200px
+I strongly believe your workflow should not support a tool but a tool should support your workflow.
 
-Job
-___
-I work as a software developer/system engineer and like python most. Currently, I am employed at swiss national tv (Schweizerische Radio und Fernsehgesellschaft). It's one of the most interesting jobs I ever had. We have a large software and system landscape which makes my daily work just awesome. I still learn new things every day, even after 5 years of working there. The team is great as well, which is one of the most important things from my point of view.
-
-Then, as a hobby, I am quite interested in security as well. I think it becomes more and more important as everything gets smart now in times of the Internet of Things. If even your car is hack able, it becomes a problem. Fun fact, the average car is running 10 million of line of code.
-
-Languages
-_________
-As already said, my passion is **python**, preferably version 3. Even if i am able to write web front ends aka **HTML/CSS/JS** it's not my favorite work of choice. Right now, I also try to get along with **golang**, so far I only dislike the absence of Exceptions. And as a system engineer of course I am fit in **bash** which is, in my opinion, quite ugly, but yet very useful in daily business. In the past I also wrote some projects in **NodeJS**, which has some interesting approaches. I avoid to use Ruby and Perl, especially Perl, i hate it.
-
-Sysadmin
-________
-As a sysadmin I manage Debian servers and I have a strong aversion against windows. I don't like Mac OSX either but still, it's less of a pain than windows.
-Also on my private machines, i prefer Ubuntu.
+If you feel that gitcd is not supporting your desired workflow, drop me an `issue`_. about it and I'll see if I can implement it properly.
 
 
-Spare time
-----------
-.. container:: float-left
+Advantages of gitcd
+-------------------
 
-    .. image:: /images/about/hiking.jpg
-        :alt: Hiking
-        :width: 200px
+\
 
-In my spare time, I do a lot of different things. Probably too much to practice all of it seriously.
+- Configuration in the git repository
+    Gitcd stores the configuration of your current workflow in a  .gitcd config file within the repository you working on.
+    Therefore the configuration gets committed and is inside your project. Which means only one person needs to setup all the things using git cd init and everybody else gets the same config by cloning your repository.
+- Simple workflow
+    The minimum branches you need is currently a master branch for simple projects. You deviate feature branches from master branches and merge it back into if they are finished.
+- Flexibility
+    Still you have the flexibility to setup a test branch, lets say for integration tests or anything else, you name it.
+    You can have different configs for each repository you want to use gitcd for. For releases you can execute additional scripts or commands, as I do it in the gitcd repository itself to push the sources to the python package index.
 
-Father
-______
-My main activity nowadays is definitely being a proud father of a great little girl. As many of you know, this is very demanding but very satisfying at the same time.
 
-Climbing
-________
-My wife and I used to climb a lot in the past and in Switzerland we have many possibilities to practice. But since we have a child now (and i gained a lot of weight in the past few years) we didn't really climb anymore. I hope this might change in the future again since it teaches you so much - physically and mental.
-
-We still like being in the mountains, hiking, skiing or just relaxing.
-
-Sailing
-_______
-Since a few years, I am the owner of a Byte CII which is a hell lot of fun. Last year I had the most fun in wind forces around 4bft to 5bft max. Usually I sail at the Walensee (https://en.wikipedia.org/wiki/Walensee) which has a reliable wind regime. My skills aren't that good probably but this might also be the reason I like it that much.
-
+.. _issue: https://github.com/claudio-walser/gitcd/issues
+.. _workflow: https://www.gitcd.io/pages/workflow.html

@@ -8,6 +8,7 @@ GUI Usage
 :lang: en
 :slug: gui
 :use_disqus: true
+:show_on_home: false
 
 GUI Usage of gitcd
 ~~~~~~~~~~~~~~~~~~~~~
