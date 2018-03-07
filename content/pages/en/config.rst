@@ -3,7 +3,7 @@ Configfile
 
 :order: 3
 :date: 2018-01-25 08:46
-:icon: icon-link2
+:icon: icon-settings
 :summary: The .gitcd configfile in detail.
 :lang: en
 :slug: config

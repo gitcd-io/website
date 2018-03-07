@@ -7,6 +7,7 @@ About
 :summary: Learn about gitcd.
 :lang: en
 :slug: about
+:show_on_home: false
 
 
 About gitcd

@@ -118,3 +118,20 @@ DISQUS_ON_PAGES = False # if true its just displayed on every static page, like 
 
 # setup google maps
 GOOGLE_MAPS_KEY = 'AIzaSyCYepGkax6lv4UTfTCF6980IUNvVjbhMdA'
+
+
+# def createIconsFile():
+#   filename = 'output/theme/css/icomoon.css'
+#   with open(filename) as file:
+#     content = file.read()
+#     lines = content.split("\n")
+#     icons = []
+#     for line in lines:
+#       if line.startswith('.icon-'):
+#         lineParts = line.split(':')
+#         iconClass = lineParts[0].replace('.icon-', 'icon-')
+
+#         icons.append(iconClass)
+#     return icons
+
+# ICONS = createIconsFile()
