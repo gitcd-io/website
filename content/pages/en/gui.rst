@@ -1,7 +1,7 @@
 GUI Usage
 #########
 
-:order: 4
+:order: 5
 :date: 2018-01-25 08:46
 :icon: icon-layout
 :summary: How to use gitcd with the graphical user interface.

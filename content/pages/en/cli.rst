@@ -1,7 +1,7 @@
 CLI Usage
 #########
 
-:order: 3
+:order: 4
 :date: 2018-01-25 08:46
 :icon: icon-code-outline
 :summary: How to use gitcd on the Command Line.
