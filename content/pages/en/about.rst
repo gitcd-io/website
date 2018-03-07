@@ -1,5 +1,5 @@
 About
-################
+#####
 
 :order: 1
 :date: 2018-01-25 08:46
@@ -10,7 +10,7 @@ About
 
 
 About gitcd
-~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~
 
 
 Why the heck another tool for continuous delivery you might ask? Eligible question i might say. The main reason is that existing tools like gitflow, hubflow or reflow just didn't quite matched the desired `workflow`_. in the company i currently work. Branching models like nvie are very complicated and might be confusing to people which are new to git or cd in general.
@@ -33,6 +33,8 @@ Advantages of gitcd
 - Flexibility
     Still you have the flexibility to setup a test branch, lets say for integration tests or anything else, you name it.
     You can have different configs for each repository you want to use gitcd for. For releases you can execute additional scripts or commands, as I do it in the gitcd repository itself to push the sources to the python package index.
+- Multiple remotes
+    Gitcd can handle multiple remotes, if you use more than one remote in your repository, gitcd will kindly ask you which one to use for the given action. Right now, gitcd works with github and bitbucket as remotes. There are plans to integrate gitlab and self hosted gitlabs as well.
 
 
 .. _issue: https://github.com/claudio-walser/gitcd/issues
