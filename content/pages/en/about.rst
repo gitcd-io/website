@@ -15,7 +15,7 @@ About gitcd
 ~~~~~~~~~~~
 
 
-Why the heck another tool for continuous delivery you might ask? Eligible question i might say. The main reason is that existing tools like gitflow, hubflow or reflow just didn't quite matched the desired `workflow`_. in the company i currently work. Branching models like nvie are very complicated and might be confusing to people which are new to git or cd in general.
+Why the heck another tool for continuous delivery you might ask? Eligible question i might say. The main reason is that existing tools like gitflow, hubflow or reflow just didn't quite matched the desired `workflow`_ in the company i currently work. Branching models like nvie are very complicated and might be confusing to people which are new to git or cd in general.
 
 I strongly believe your workflow should not support a tool but a tool should support your workflow.
 
