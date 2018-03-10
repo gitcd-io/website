@@ -8,6 +8,7 @@ About
 :lang: en
 :slug: about
 :show_on_home: false
+:use_disqus: true
 
 
 About gitcd

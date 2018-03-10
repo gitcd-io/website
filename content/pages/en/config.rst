@@ -7,6 +7,7 @@ Configfile
 :summary: The .gitcd configfile in detail.
 :lang: en
 :slug: config
+:use_disqus: true
 
 
 The gitcd configfile
