@@ -51,7 +51,7 @@ Most of the values should be very self-explanatory. Still, here is a complete li
 
 - **Do you want to execute some additional commands after a release?**
 
-  - This is useful if you want to execute any cli script after creating a tag, for example, gitcd itself uses such a script to publish the new release on pypi after creating a new tag. You can see the script here https://github.com/claudio-walser/gitcd/blob/master/publish.sh.
+  - This is useful if you want to execute any cli script after creating a tag, for example, gitcd itself uses such a script to publish the new release on pypi after creating a new tag. You can see the script here https://github.com/gitcd-io/gitcd/blob/master/publish.sh.
 
 
 .. code-block:: bash

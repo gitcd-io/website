@@ -38,5 +38,5 @@ Advantages of gitcd
     Gitcd can handle multiple remotes, if you use more than one remote in your repository, gitcd will kindly ask you which one to use for the given action. Right now, gitcd works with github and bitbucket as remotes. There are plans to integrate gitlab and self hosted gitlabs as well.
 
 
-.. _issue: https://github.com/claudio-walser/gitcd/issues
+.. _issue: https://github.com/gitcd-io/gitcd/issues
 .. _workflow: https://www.gitcd.io/pages/workflow.html
