@@ -118,7 +118,7 @@ DISQUS_ON_PAGES = False # if true its just displayed on every static page, like 
 
 # setup google maps
 GOOGLE_MAPS_KEY = 'AIzaSyCYepGkax6lv4UTfTCF6980IUNvVjbhMdA'
-
+GOOGLE_TRACKING_ID = 'UA-116863257-1'
 
 # def createIconsFile():
 #   filename = 'output/theme/css/icomoon.css'
