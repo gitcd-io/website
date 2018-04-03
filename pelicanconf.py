@@ -75,9 +75,9 @@ HERO = [
 
 # Social widget
 SOCIAL = (
-  ('Github', 'https://www.github.com/claudio-walser/gitcd'),
+  ('Github', 'https://www.github.com/gitcd-io/gitcd'),
   ('Read the Docs', 'https://gitcd.readthedocs.io/en/latest/?badge=latest'),
-  ('Travis CI', 'https://travis-ci.org/claudio-walser/gitcd')
+  ('Travis CI', 'https://travis-ci.org/gitcd-io/gitcd')
 )
 
 ABOUT = {

@@ -8,13 +8,14 @@ About
 :lang: en
 :slug: about
 :show_on_home: false
+:use_disqus: true
 
 
 About gitcd
 ~~~~~~~~~~~
 
 
-Why the heck another tool for continuous delivery you might ask? Eligible question i might say. The main reason is that existing tools like gitflow, hubflow or reflow just didn't quite matched the desired `workflow`_. in the company i currently work. Branching models like nvie are very complicated and might be confusing to people which are new to git or cd in general.
+Why the heck another tool for continuous delivery you might ask? Eligible question i might say. The main reason is that existing tools like gitflow, hubflow or reflow just didn't quite matched the desired `workflow`_ in the company i currently work. Branching models like nvie are very complicated and might be confusing to people which are new to git or cd in general.
 
 I strongly believe your workflow should not support a tool but a tool should support your workflow.
 
@@ -38,5 +39,5 @@ Advantages of gitcd
     Gitcd can handle multiple remotes, if you use more than one remote in your repository, gitcd will kindly ask you which one to use for the given action. Right now, gitcd works with github and bitbucket as remotes. There are plans to integrate gitlab and self hosted gitlabs as well.
 
 
-.. _issue: https://github.com/claudio-walser/gitcd/issues
+.. _issue: https://github.com/gitcd-io/gitcd/issues
 .. _workflow: https://www.gitcd.io/pages/workflow.html
