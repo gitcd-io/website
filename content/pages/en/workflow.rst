@@ -19,7 +19,7 @@ A very important thing in continuous delivery is continuous integration and reli
 
 The following is a quite simple branching model which we use on all our projects and is well supported by gitcd.
 The only disadvantage is that you might test features which never makes it into production. Therefore, your Test branch might diverge quite a bit at some point. Our solution to this problem is to recreate the test branch from master frequently. In one project, we make this manually every two weeks at the sprint end on another one we create a new test branch from master every Sunday evening in jenkins. There is still one problem remaining, if your test branch keeps the same name, everybody not deleting the branch locally might overwrite the history with the old, diverged content again.
-We solve this by using a postfix, for example test-<sprint-number> or test-<date> respectively. This is also well supported by gitcd which is threatening the test branch setting as a prefix. If it finds more than one corresponding test branch, it will ask you which one you want to use. To keep your branches proper, git-cd clean was implemented, which will delete all your "test" branches not found on remote.
+We solve this by using a postfix, for example test-<sprint-number> or test-<date> respectively. This is also well supported by gitcd which is treating the test branch setting as a prefix. If it finds more than one corresponding test branch, it will ask you which one you want to use. To keep your branches proper, git-cd clean was implemented, which will delete all your "test" branches not found on remote.
 
 
 .. image:: /images/workflow/branching-model.svg
